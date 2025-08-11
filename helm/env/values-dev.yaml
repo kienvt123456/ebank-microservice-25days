@@ -1,0 +1,2 @@
+env: { SPRING_PROFILES_ACTIVE: dev }
+eureka: { url: http://eureka.dev.svc.cluster.local:8761/eureka/ }

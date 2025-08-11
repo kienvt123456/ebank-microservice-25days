@@ -1,0 +1,1 @@
+eureka: { client: { service-url: { defaultZone: "http://eureka.uat.svc.cluster.local:8761/eureka/" } } }

@@ -1,1 +1,1 @@
-# ebank-microservice-25days
+# Bundle with scripts

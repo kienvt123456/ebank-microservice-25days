@@ -1,0 +1,4 @@
+apiVersion: v2
+name: loan-service
+version: 0.1.1
+type: application

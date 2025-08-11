@@ -1,0 +1,3 @@
+env: { SPRING_PROFILES_ACTIVE: uat }
+eureka: { url: http://eureka.uat.svc.cluster.local:8761/eureka/ }
+hpa: { enabled: true, minReplicas: 2, maxReplicas: 8, targetCPUUtilizationPercentage: 65 }
