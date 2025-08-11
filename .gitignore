@@ -1,0 +1,6 @@
+/day04-loadbalancer/payment-service/target/
+/day04-loadbalancer/loan-service/target/
+/day03-api-gateway/api-gateway/target/
+/day02-eureka-discovery/payment-service/target/
+/day02-eureka-discovery/loan-service/target/
+/day02-eureka-discovery/eureka-server/target/
