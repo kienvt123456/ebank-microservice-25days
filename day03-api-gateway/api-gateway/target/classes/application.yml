@@ -1,0 +1,18 @@
+server: { port: 9000 }
+spring:
+  application: { name: api-gateway }
+  profiles: { active: dev }
+  cloud:
+    gateway:
+      discovery.locator:
+        enabled: true
+        lower-case-service-id: true
+      routes:
+        - id: payment-api
+          uri: lb://payment-service
+          predicates: [ Path=/api/payment/** ]
+          filters: [ StripPrefix=2 ]
+        - id: loan-api
+          uri: lb://loan-service
+          predicates: [ Path=/api/loan/** ]
+          filters: [ StripPrefix=2 ]

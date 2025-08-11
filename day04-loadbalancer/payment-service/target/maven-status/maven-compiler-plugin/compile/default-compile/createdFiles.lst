@@ -1,0 +1,3 @@
+com\ebank\payment\config\LbBeans.class
+com\ebank\payment\PaymentApplication.class
+com\ebank\payment\web\CallLoanController.class

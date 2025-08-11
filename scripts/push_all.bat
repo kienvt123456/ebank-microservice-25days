@@ -1,10 +1,13 @@
 @echo off
-setlocal
-if "%1"=="" (echo Usage: push_all.bat <docker_user> [tag] & exit /b 1)
-set USER=%1
-set TAG=%2
-if "%TAG%"=="" set TAG=latest
-docker push %USER%/eureka:%TAG%
-docker push %USER%/api-gateway:%TAG%
-docker push %USER%/payment-service:%TAG%
-docker push %USER%/loan-service:%TAG%
+set DOCKER_USER=%1
+set IMAGE_TAG=%2
+if "%DOCKER_USER%"=="" (
+  echo Usage: scripts\push_all.bat ^<docker_user^> ^<tag^>
+  exit /b 1
+)
+if "%IMAGE_TAG%"=="" set IMAGE_TAG=latest
+
+docker push %DOCKER_USER%/eureka:%IMAGE_TAG%
+docker push %DOCKER_USER%/api-gateway:%IMAGE_TAG%
+docker push %DOCKER_USER%/payment-service:%IMAGE_TAG%
+docker push %DOCKER_USER%/loan-service:%IMAGE_TAG%

@@ -1,0 +1,2 @@
+com\ebank\gateway\ApiGatewayApplication.class
+com\ebank\gateway\security\JwtAuthFilter.class
