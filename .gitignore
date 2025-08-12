@@ -4,3 +4,5 @@
 /day02-eureka-discovery/payment-service/target/
 /day02-eureka-discovery/loan-service/target/
 /day02-eureka-discovery/eureka-server/target/
+/scripts/
+/helm/
